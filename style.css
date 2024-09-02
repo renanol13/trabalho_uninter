@@ -1,0 +1,331 @@
+:root {
+  --color1: #2f3234;
+  --color2: #2a2b2a;
+  --color3: #22242b;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Dosis", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red !important;
+  border-radius: 6px !important;
+}
+
+body {
+  background-color: var(--color2);
+}
+
+p{
+  text-align: justify;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom, var(--color1), var(--color3));
+  background-color: #1e2528;
+  color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.341);
+  z-index: 99999;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+}
+
+header li:hover {
+  color: red;
+  transition: .5s;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+section h1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+
+strong {
+  color: red;
+}
+
+main {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0px 1em;
+  color: white;
+}
+
+#iconBurguer{
+  display: none;
+}
+
+.sectionMain {
+  padding-top: 80px;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gitHub:hover {
+  transition: 0.3s;
+  color: black;
+}
+
+#profile h1 strong{
+    position: absolute;
+}
+
+
+#profile #profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+#profile #profileInfo img {
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.489);
+}
+
+#profile #profileInfo p {
+  text-indent: 20px;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 30px;
+  width: 50%;
+}
+
+#profile #profileIcons {
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-top: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+}
+
+
+#profile #profileIcons i {
+  font-size: 2.5em;
+  transition: 0.3s;
+}
+
+#profile #profileIcons #linkedin:hover {
+  color: #0a66c2;
+}
+
+#projects > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectCard {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 400px;
+  background-color: #2f3234;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 0.5em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.385);
+  transition: 0.5s;
+}
+
+.projectCard:hover {
+  transform: scale(1.03);
+}
+
+.projectCard img {
+  width: 95%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.projectCard h2 {
+  margin-bottom: 5px;
+}
+
+.projectCard p {
+  margin-bottom: 15px;
+  text-indent: 10px;
+}
+
+.iconsProjectCard {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.iconsProjectCard a i {
+  font-size: 1.4em;
+}
+
+.iconsProjectCard a:nth-child(1):hover {
+  color: rgb(255, 208, 0);
+  transition: 0.3s;
+}
+
+.whichTec {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.react {
+  color: #149eca;
+}
+
+.mongoDb {
+  color: #00ed64;
+}
+
+.node {
+  color: #178415;
+}
+
+.node p:nth-child(3){
+  font-size: 0.6em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.367);
+}
+
+.javaScript {
+  color: gold;
+}
+
+.typeScript {
+  color: #3178C6;
+}
+
+.git{
+  color: #F44C27;
+}
+
+.publicApi {
+  color: rgb(236, 23, 23);
+}
+
+#skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-indent: 0;
+}
+
+
+#skills > div i {
+  font-size: 2.5em;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact form{
+  border: 1px solid red;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+#contact .boxInput{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#contact .boxInput label{
+  font-size: 2em;
+}
+
+#contact .boxInput input{
+  padding: 0.4em;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#contact .boxInput input::placeholder{
+  font-size: 1.2em;
+  font-weight: initial;
+}
+
+
+/* animation js */
+@media screen and (min-width: 700px){
+  #profile h1{
+    transform: translateY(-500px);
+  }
+  
+  #profile h1  strong{
+    transform: translateY(-500px);
+  }
+  #profileInfo img{
+    transform: translateX(-500px);
+  }
+
+  #profileInfo p{
+    opacity: 0;
+  }
+
+  #profileIcons{
+    transform: translateY(100px);
+  }
+} 
+
+
+

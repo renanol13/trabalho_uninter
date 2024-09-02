@@ -1,0 +1,86 @@
+@media screen and (max-width: 700px) {
+  #iconBurguer {
+    display: block;
+    height: 50px;
+    width: 40px;
+    position: relative;
+  }
+
+  .lineBurguer,
+  .lineBurguer::before,
+  .lineBurguer::after {
+    background-color: red;
+    height: 6px;
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  .lineBurguer {
+    top: 50%;
+    width: 35px;
+  }
+
+  .lineBurguer::before {
+    top: -11px;
+    width: 40px;
+  }
+
+  .lineBurguer::after {
+    top: 11px;
+    width: 40px;
+  }
+
+  #iconBurguer.activeMenu .lineBurguer {
+    background-color: transparent;
+  }
+  #iconBurguer.activeMenu .lineBurguer::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  #iconBurguer.activeMenu .lineBurguer::after {
+    top: 0;
+    transform: rotate(225deg);
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+nav {
+    background-image: linear-gradient(to top, var(--color1), var(--color3));
+    position: absolute;
+    top: 80px;
+    transition: 0.5s;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .showMenu {
+    opacity: 1;
+  }
+
+  #profile img{
+    border: 2px solid red;
+    padding: .3em;
+  }
+
+  #profile #profileInfo p {
+    width: 100%;
+  }
+
+  .projectCard {
+    width: 80%;
+    height: 500px;
+  }
+
+  #skills > div {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}

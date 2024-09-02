@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleMobile.css" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&;"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/1568a7a384.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>trabalho html/css</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div id="iconBurguer">
+          <div class="lineBurguer"></div>
+        </div>
+        <h1>Renan Oliveira</h1>
+        <nav>
+          <ul>
+            <li id="scrollProf">Sobre mim</li>
+            <li id="scrollProj">Projetos</li>
+            <li id="scrollSkill" >Habilidades</li>
+            <li id="scrollContact">Contato</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="profile" class="sectionMain">
+        <h1>Quem sou<strong>?</strong></h1>
+        <div id="profileInfo">
+            <img src="img/eu.jpg" alt="minha imagem" />
+          <p>
+            Sou entusiasta da tecnologia, e atualmente cursando
+            <strong>Engenharia de Software</strong> desde agosto de 2023.
+            Fascinado pelo potencial transformador da tecnologia, encontrei
+            minha paixão no universo abrangente do <strong>JavaScript</strong>.
+            Nesse momento estou concentrado em consolidar meu conhecimento no
+            <strong>React</strong>, buscando me aprofundar cada vez mais nesse
+            framework dinâmico e promissor. Animado com a jornada à frente,
+            estou comprometido em aprimorar minhas habilidades e, quem sabe um
+            dia, trabalhar em projetos de refência.
+          </p>
+        </div>
+        <div id="profileIcons">
+          <a
+            href="https://www.linkedin.com/in/renan-oliveira-10b576190/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin" id="linkedin"></i>
+          </a>
+          <a href="https://github.com/renanol13" target="_blank">
+            <i class="fa-brands fa-square-github gitHub"></i>
+          </a>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------->
+      <section id="projects" class="sectionMain">
+        <h1>Projetos<strong> .</strong></h1>
+
+        <div>
+          <section class="projectCard">
+            <h2>Buscador de CEP</h2>
+            <img src="img/buscadorCep.png" alt="social-Sync" />
+            <p>
+              Esse projeto marca minha entrada no superset TypeScript com o tradicional framework React.js. Apesar de ser bem simples, e ter como finalidade apenas abordar conceitos de tipagem forte que o Ts nos proporciona, não abrir mão de um layout intuitivo e de fácil uso. Além disso foi usada a API do viaCep como fonte de informações.
+            </p>
+            <div class="iconsProjectCard">
+              <a href="https://buscador-cep-red-psi.vercel.app/" target="_blank">
+                <i class="fa-regular fa-eye"> </i
+              ></a>
+              <a href="https://github.com/renanol13/buscador-de-cep" target="_blank">
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="react">React.js</p>
+              <p class="typeScript">TypeScript</p>
+              <p class="publicApi">API Pública</p>
+            </div>
+          </section>
+
+          <section class="projectCard">
+            <h2>Social-Sync</h2>
+            <img src="img/socialSync.png" alt="social-Sync" />
+            <p>
+              Social-Sync, minha primeira incursão na integração de MongoDB,
+              Node.js e React, é uma rede social compacta e simples de se usar.
+              Oferece recursos de cadastro, postagens, interatividade (curtidas
+              e comentários), possibilidade de seguir e ser seguido por outros
+              usuários, e construção de perfis. O projeto visa evoluir com
+              melhorias de segurança, desempenho e adição de novas
+              funcionalidades
+            </p>
+            <div class="iconsProjectCard">
+              <a href="https://social-sync-henna.vercel.app/" target="_blank">
+                <i class="fa-regular fa-eye"> </i
+              ></a>
+              <a href="https://github.com/renanol13/socialSync" target="_blank">
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="react">React.js</p>
+              <p class="node">Node.js</p>
+              <p class="mongoDb">MongoDb</p>
+            </div>
+          </section>
+
+          <section class="projectCard">
+            <h2>Movie-db</h2>
+            <img src="img/MovieDb.png" alt="movieDb" />
+            <p>
+              O MovieDB é um projeto compacto de filmes que Oferece aos usuários
+              a funcionalidade de explorar e pesquisar informações sobre
+              diversos filmes. Desenvolvido em React, o projeto utiliza a API do
+              The Movie Database (TMDb) para acessar dados abrangentes sobre
+              filmes, incluindo sinopses, abrangência, classicação, etc.
+            </p>
+            <div class="iconsProjectCard">
+              <a href="https://projeto-movie-db.vercel.app/" target="_blank">
+                <i class="fa-regular fa-eye"> </i
+              ></a>
+              <a
+                href="https://github.com/renanol13/projeto-movie-db"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="react">React.js</p>
+              <p class="publicApi">API Pública</p>
+            </div>
+          </section>
+
+          <section class="projectCard">
+            <h2>Lista de tarefas</h2>
+            <img src="img/to-do-list.png" alt="to-do-list" />
+            <p>
+              Esse projeto é uma típica aplicação de lista de tarefas
+              desenvolvida em React, que permitem aos usuários, de forma simples
+              e intuitiva adicionar, editar, e excluir tarefas, com a
+              conveniência de salvar suas listas na memória do navegador.
+            </p>
+            <div class="iconsProjectCard">
+              <a
+                href="https://projeto-to-do-list-chi.vercel.app/"
+                target="_blank"
+              >
+                <i class="fa-regular fa-eye"> </i
+              ></a>
+              <a
+                href="https://github.com/renanol13/projeto_to-do-list"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="react">React.js</p>
+            </div>
+          </section>
+
+          <section class="projectCard">
+            <h2>Open-Weather</h2>
+            <img src="img/openWeather.png" alt="openWeather" />
+            <p>
+              O Open-Weather é mais uma das minhas primeiras vivências no
+              desenvolvimento com JavaScript puro. Esta aplicação permite aos
+              usuários pesquisar por suas cidades e acessar informações sobre o
+              clima em tempo real, utilizando a API do OpenWeather, oferecendo
+              dados como temperatura, velocidade do vento, umidade, entre outros
+            </p>
+            <div class="iconsProjectCard">
+              <a
+                href="https://renanol13.github.io/projeto-openWeather/"
+                target="_blank"
+              >
+                <i class="fa-regular fa-eye"> </i>
+              </a>
+              <a
+                href="https://github.com/renanol13/projeto-openWeather"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="javaScript">JavaScript</p>
+              <p class="publicApi">API Pública</p>
+            </div>
+          </section>
+
+          <section class="projectCard">
+            <h2>Cronômetro</h2>
+            <img src="img/cronometro.png" alt="cronometro" />
+            <p>
+              Um dos meus primeiros projetos no mundo javaScript, desenvolvido
+              com foco na simplicidade e usabilidade, a aplicação oferece uma
+              interface intuitiva para que os usuários configurem facilmente o
+              alarme para o tempo desejado.
+            </p>
+            <div class="iconsProjectCard">
+              <a
+                href="https://renanol13.github.io/cronometro2.0/"
+                target="_blank"
+              >
+                <i class="fa-regular fa-eye"> </i>
+              </a>
+              <a
+                href="https://github.com/renanol13/cronometro2.0"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-github gitHub"></i>
+              </a>
+            </div>
+            <div class="whichTec">
+              <p class="javaScript">JavaScript</p>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- --------------------------------------------------------------------- -->
+      <section id="mySkills" class="sectionMain">
+        <h1>Sou formado em Administração e atuamente estou me habilitando nessas tecnologias <strong>:</strong></h1>
+        <div id="skills">
+          <div style="color: orangered">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div style="color: blue">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="javaScript">
+            <i class="fa-brands fa-js"></i>
+            <p>javaScript</p>
+          </div>
+          <div class="react">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="git">
+            <i class="fa-brands fa-git-alt"></i>
+            <p>git</p>
+          </div>
+          <div class="node">
+            <i class="fa-brands fa-node-js"></i>
+            <p>Node</p>
+            <p>em processo <strong>...</strong></p>
+          </div>
+          
+        </div>
+      </section>
+      <section id="contact" class="sectionMain">
+        <form id="boxForm">
+          <div class="boxInput">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="digite seu nome...">
+          </div>
+          <div class="boxInput">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="digite seu email...">
+          </div>
+          <div class="boxInput">
+          <label for="mensage">Deixe sua mensgem: </label>
+          <textarea id="mensage"></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
